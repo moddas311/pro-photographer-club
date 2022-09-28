@@ -1,0 +1,44 @@
+[
+    {
+        "id": "6334818205d69559848663b4",
+        "category": "Wedding",
+        "picture": "https://ibb.co/pbprB38",
+        "age": "30-35",
+        "time-required": "30s"
+    },
+    {
+        "id": "63348182a1e137de32d77127",
+        "category": "Sporting",
+        "picture": "https://ibb.co/BZqmj7Q",
+        "age": "20-25",
+        "time-required": "30s"
+    },
+    {
+        "id": "63348182bf5c12f3c9c8775c",
+        "category": "Traveling",
+        "picture": "https://ibb.co/hsXtQsk",
+        "age": "25-35",
+        "time-required": "30s"
+    },
+    {
+        "id": "633481823a04b2a63050d059",
+        "category": "Live Cast",
+        "picture": "https://ibb.co/HKV2k0S",
+        "age": "25-35",
+        "time-required": "30s"
+    },
+    {
+        "id": "63348182f20eab3c42c7cd5c",
+        "category": "Natural",
+        "picture": "https://ibb.co/2qgn7mW",
+        "age": "30-35",
+        "time-required": "30s"
+    },
+    {
+        "id": "6334818266f330163e4a22e2",
+        "category": "Office",
+        "picture": "https://ibb.co/6gyGFcT",
+        "age": "30-45",
+        "time-required": "30s"
+    }
+]
