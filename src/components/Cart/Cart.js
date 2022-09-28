@@ -7,12 +7,11 @@ const Cart = (props) => {
         <div className='cart'>
           <img src={img} alt="" />
             <div className='product-info'>
-                <p className='course-name'>{category}</p>
-                <p></p>
-                <p>{age}</p>
-                <p>{timeRequired}</p>
+                <h4 className='course-name'>{category}</h4>
+                <p>For Age: {age}</p>
+                <p>Time required: {timeRequired}</p>
             </div>
-            <button className='btn-cart'></button>
+            <button className='btn-cart'>Add to cart</button>
         </div>
     );
 };
