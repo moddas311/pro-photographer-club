@@ -2,7 +2,7 @@ import React from 'react';
 import './Cart.css'
 
 const Cart = (props) => {
-    const { cart, setCount } = props
+    const { cart, handleBtn } = props
     const { img, category, age, timeRequired } = cart;
     return (
         <div className='carts'>
@@ -11,9 +11,9 @@ const Cart = (props) => {
                 <div className='product-info'>
                     <h4 className='course-name'>{category}</h4>
                     <p>For Age: {age}</p>
-                    <p>Time required: {timeRequired}s</p>
+                    <p>Time required: {timeRequired} Day</p>
                 </div>
-                <button onClick={() => setCount(timeRequired)} className='btn-cart'>Add to cart</button>
+                <button onClick={() => handleBtn(timeRequired)} className='btn-cart'>Add to cart</button>
             </div>
         </div>
     );

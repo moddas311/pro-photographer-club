@@ -73,3 +73,7 @@
 .btn-finished button:hover{
     background-color: blue;
 }
+.sec{
+    margin-left: 25px;
+    color: silver;
+}

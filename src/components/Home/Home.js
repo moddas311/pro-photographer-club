@@ -6,12 +6,16 @@ import './Home.css'
 
 const Home = () => {
     const [carts, setCarts] = useState([])
-    const [count, setCount] = useState("")
+    const [count, setCount] = useState(0)
     useEffect(() => {
         fetch('photography.json')
             .then(response => response.json())
             .then(data => setCarts(data))
     }, [])
+    const handleBtn = (time) =>{
+        setCount(time + count);
+
+    }
     return (
         <div className='home-container'>
             <div className="cart-container">
@@ -19,7 +23,7 @@ const Home = () => {
                 <div className='package'>
                     {
                         carts.map(cart => <Cart
-                            setCount={setCount}
+                            handleBtn = {handleBtn}
                             key={cart.id}
                             cart={cart}
                         ></Cart>)
