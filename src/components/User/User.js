@@ -35,7 +35,7 @@ const User = ({ count }) => {
                         <p>Age</p>
                     </div>
                 </div>
-                <div>
+                <div className='add-break'>
                     <h3>Add A Break</h3>
                     <div className='btn'>
                         <button onClick={() => addBreak(10)} className='btn-second'>10s</button>
