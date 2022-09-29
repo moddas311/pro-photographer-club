@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './User.css'
 import { addToLocal } from '../Utilities/Utilities';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const User = ({ count }) => {
@@ -10,6 +12,8 @@ const User = ({ count }) => {
         setBreakTime(time + breakTime);
         addToLocal(time);
     }
+
+    const notify = () => toast.success('Congratulation you have done it!',{position: 'top-center', theme:'dark'})
     return (
         <div>
             <div>
@@ -51,7 +55,8 @@ const User = ({ count }) => {
                     </div>
                 </div>
                 <div className='btn-finished'>
-                    <button className='btn-completed'>Activity Completed</button>
+                    <button onClick={notify} className='btn-completed'>Activity Completed</button>
+                    <ToastContainer/>
                 </div>
             </div>
         </div>
