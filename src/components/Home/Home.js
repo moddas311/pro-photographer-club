@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Nav from '../Nav/Nav';
+import User from '../User/User';
 import './Home.css'
 
 const Home = () => {
@@ -24,7 +25,7 @@ const Home = () => {
                 </div>
            </div>
            <div className="cart-calculation">
-                <h4>This is from cart calculation</h4>
+                <User></User>
            </div>
         </div>
     );

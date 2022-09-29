@@ -1,8 +1,10 @@
 .nav{
+    margin-bottom: 50px;
     padding-left: 50px;
-    padding-top: 20px ;
+    padding-top: 20px;
     padding-bottom: 20px;
     background-color: oldlace;
+    border-radius: 20px;
 
 }
 .nav h1{
