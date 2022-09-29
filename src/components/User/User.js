@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
 import './User.css'
+import { addToLocal } from '../Utilities/Utilities';
 
-const User = ({count}) => {
-    const [sec, setSec]= useState(10)
+
+const User = ({ count }) => {
+    const [breakTime, setBreakTime] = useState(0);
+
+    const addBreak = (time) => {
+        setBreakTime(time + breakTime);
+        addToLocal(time);
+    }
     return (
         <div>
             <div>
@@ -27,20 +34,20 @@ const User = ({count}) => {
                 <div>
                     <h3>Add A Break</h3>
                     <div className='btn'>
-                        <button onClick={setSec} className='btn-second'>{sec}s</button>
-                        <button className='btn-second'>20s</button>
-                        <button className='btn-second'>30s</button>
-                        <button className='btn-second'>40s</button>
-                        <button className='btn-second'>50s</button>
+                        <button onClick={() => addBreak(10)} className='btn-second'>10s</button>
+                        <button onClick={() => addBreak(20)} className='btn-second'>20s</button>
+                        <button onClick={() => addBreak(30)} className='btn-second'>30s</button>
+                        <button onClick={() => addBreak(40)} className='btn-second'>40s</button>
+                        <button onClick={() => addBreak(50)} className='btn-second'>50s</button>
                     </div>
                 </div>
                 <div className='other-activity'>
                     <h3>Photography Details</h3>
                     <div className='course-time'>
-                        <h4>Course Time: {count} </h4>
+                        <h4>Course Time: {count}<span className='sec'>Days</span></h4>
                     </div>
                     <div className='break-time'>
-                        <h4>Break Time</h4>
+                        <h4>Break Time: {breakTime}<span className='sec'>Seconds</span></h4>
                     </div>
                 </div>
                 <div className='btn-finished'>
