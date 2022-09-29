@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './User.css'
 
-const User = () => {
+const User = ({count}) => {
+    const [sec, setSec]= useState(10)
     return (
         <div>
             <div>
@@ -26,7 +27,7 @@ const User = () => {
                 <div>
                     <h3>Add A Break</h3>
                     <div className='btn'>
-                        <button className='btn-second'>10s</button>
+                        <button onClick={setSec} className='btn-second'>{sec}s</button>
                         <button className='btn-second'>20s</button>
                         <button className='btn-second'>30s</button>
                         <button className='btn-second'>40s</button>
@@ -36,7 +37,7 @@ const User = () => {
                 <div className='other-activity'>
                     <h3>Photography Details</h3>
                     <div className='course-time'>
-                        <h4>Course Time </h4>
+                        <h4>Course Time: {count} </h4>
                     </div>
                     <div className='break-time'>
                         <h4>Break Time</h4>

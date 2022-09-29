@@ -4,7 +4,7 @@ import './Nav.css';
 const Nav = () => {
     return (
       <nav className='nav'>
-        <h3>PRO-PHOTOGRAPHERS-CLUB</h3>
+        <h1>PRO-PHOTOGRAPHERS-CLUB</h1>
         <p>Select your favorite one</p>
       </nav>
     );
