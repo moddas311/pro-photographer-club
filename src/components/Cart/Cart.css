@@ -22,3 +22,6 @@
     background-color: blue;
     color: aliceblue;
 }
+.btn-cart:hover{
+    background-color: orange;
+}

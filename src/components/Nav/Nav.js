@@ -4,8 +4,8 @@ import './Nav.css';
 const Nav = () => {
     return (
       <nav className='nav'>
-        <h1>PRO-PHOTOGRAPHERS-CLUB</h1>
-        <h4>Select your favorite one</h4>
+        <h3>PRO-PHOTOGRAPHERS-CLUB</h3>
+        <p>Select your favorite one</p>
       </nav>
     );
 };
